@@ -1,5 +1,7 @@
 package pokemon.view;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.Color;
 import java.awt.Dimension;
 
@@ -140,8 +142,50 @@ public class PokemonPanel extends JPanel
 	}
 	
 	
-	public void setupListeners()
+	private void setupDropdown()
 	{
+		
+	}
+	
+	private void setupListeners()
+	{
+		
+		pokedexSelector.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent selection)
+			{
+				int selected = pokedexSelector.getSelectedIndex();
+				nameField.setText(baseController.getPokedex().get(selected).getName());
+				numberField.setText(baseController.getPokedex().get(selected).getNumber() + "");
+				combatField.setText(baseController.getPokedex().get(selected).getAttackPoints() + "");
+				speedField.setText(baseController.getPokedex().get(selected).getSpeed() + "");
+				healthField.setText(baseController.getPokedex().get(selected).getHealthPoints() + "");
+				advancedArea.setText(baseController.getPokedex().get(selected).getPokemonInformation() + "\n" + baseController.getPokedex().get(selected).getClass().getPokemonTypes());
+				changeColorBasedOnData(baseController.getPokedex().getPokedex().get(selected).getPokemonTypes());
+				changeImageDisplay(baseController.getPokedex().get(selected).getClass().getSimpleName());
+				
+				
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		updateButton.addActionListener(new ActionListener() // make this work plz
+		{
+			public void actionPerformed(ActionEvent selection)
+			{
+			if(isValidName(nameField.getText()) && isValidInteger(combatField.getText()) && isValidInteger(healthField.getText()) && isValidDouble(speedField).getText()) && isValidInteger(speedField.getText())
+					{
+						
+					}
+			}
+		}
+	}
+	
 		
 		private void changeColorBaseOnData(String data)
 		{
@@ -154,23 +198,38 @@ public class PokemonPanel extends JPanel
 			this.setBackground(Color.PINK);
 		}
 		repaint();
-	}
+		}
 		
-	
-	private void changeImageDisplay(String name)
-	{
-		String path =
-		String defaultName = "beastball";
-		String extension = ".png";
-		try
+		
+		
+		private void changeImageDisplay(String name)
+		{
+			String path = "/pokemon/view/images/";
+			String defaultName = "beastball";
+			String extension = ".png";
+			try
+			{
+				pokemonIcon = new ImageIcon(getClass().getResource(path + name + extension));
+				pokemonLabel.setIcon(pokemonIcon);
+			}
+			catch (NullPointerException missingFile)
+			{
+				pokemonIcon = new ImageIcon(getClass().getResource(path + defaultName + extension));
+				pokemonLabel.setIcon(pokemonIcon);
+			}
+			repaint();
+		}
+		
+		private boolean isValidDouble(String input)
 		{
 			
 		}
-		
-	}
-		
-		
-		
-		
-	}
+		private boolean isValidInteger(String input)
+		{
+			
+		}
+		private boolean isValidName(String name)
+		{
+			
+		}
 }
