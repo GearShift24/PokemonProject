@@ -45,7 +45,7 @@ public class PokemonPanel extends JPanel
 		this.speedField = new JTextField(5);
 		this.numberField = new JTextField(5);
 		this.advancedArea = new JTextArea(10,25);
-		this.pokedexSelector = new JComboBox(new String [] {"BeWear", "Barbaracle", "Taros", "Golisopod", "Nosepass"});
+		this.pokedexSelector = new JComboBox(baseController.buildPokedexText());
 		this.combatLabel = new JLabel("Attack Points:");
 		this.speedLabel = new JLabel("Speed Rate:");
 		this.healthLabel = new JLabel("Health Points:");
@@ -142,6 +142,35 @@ public class PokemonPanel extends JPanel
 	
 	public void setupListeners()
 	{
+		
+		private void changeColorBaseOnData(String data)
+		{
+		if(data.contains("Normal"))
+		{
+			this.setBackground(Color.LIGHT_GRAY);
+		}
+		else if (data.contains("Fighting"))
+		{
+			this.setBackground(Color.PINK);
+		}
+		repaint();
+	}
+		
+	
+	private void changeImageDisplay(String name)
+	{
+		String path =
+		String defaultName = "beastball";
+		String extension = ".png";
+		try
+		{
+			
+		}
+		
+	}
+		
+		
+		
 		
 	}
 }
