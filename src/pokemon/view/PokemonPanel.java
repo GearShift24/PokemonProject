@@ -62,6 +62,7 @@ public class PokemonPanel extends JPanel
 		setupPanel();
 		setupLayout();
 		setupListeners();
+		setupDropdown();
 	}
 	
 	
@@ -160,30 +161,25 @@ public class PokemonPanel extends JPanel
 				combatField.setText(baseController.getPokedex().get(selected).getAttackPoints() + "");
 				speedField.setText(baseController.getPokedex().get(selected).getSpeed() + "");
 				healthField.setText(baseController.getPokedex().get(selected).getHealthPoints() + "");
-				advancedArea.setText(baseController.getPokedex().get(selected).getPokemonInformation() + "\n" + baseController.getPokedex().get(selected).getClass().getPokemonTypes());
-				changeColorBasedOnData(baseController.getPokedex().getPokedex().get(selected).getPokemonTypes());
+				advancedArea.setText(baseController.getPokedex().get(selected).getPokemonInformation() 
+						+ "\n" + baseController.getPokedex().get(selected).getPokemonTypes());
+				changeColorBasedOnData(baseController.getPokedex().get(selected).getPokemonTypes());
 				changeImageDisplay(baseController.getPokedex().get(selected).getClass().getSimpleName());
 				
 				
 			}
-		}
-		
-		
-		
-		
-		
-		
-		
-		updateButton.addActionListener(new ActionListener() // make this work plz
+		});
+	
+		updateButton.addActionListener(new ActionListener() 
 		{
 			public void actionPerformed(ActionEvent selection)
 			{
-			if(isValidName(nameField.getText()) && isValidInteger(combatField.getText()) && isValidInteger(healthField.getText()) && isValidDouble(speedField).getText()) && isValidInteger(speedField.getText())
+			if(isValidName(nameField.getText()) && isValidInteger(combatField.getText()) && isValidInteger(healthField.getText()) && isValidDouble(speedField.getText()) && isValidInteger(speedField.getText()))
 					{
-						
+						//what stuff in here
 					}
 			}
-		}
+		});
 	}
 	
 		
@@ -199,6 +195,7 @@ public class PokemonPanel extends JPanel
 		}
 		repaint();
 		}
+		//do for ROCK WATER BUG
 		
 		
 		
