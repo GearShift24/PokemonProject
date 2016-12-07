@@ -6,6 +6,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 
 import javax.swing.*;
+import pokemon.model.Pokemon;
 
 import pokemon.controller.PokemonController;
 
@@ -76,6 +77,12 @@ public class PokemonPanel extends JPanel
 		advancedArea.setWrapStyleWord(true);
 		advancedArea.setLineWrap(true);
 		this.setBackground(Color.LIGHT_GRAY);
+		
+		
+		pokemonLabel.setVerticalTextPosition(JLabel.BOTTOM);
+		pokemonLabel.setHorizontalTextPosition(JLabel.CENTER);
+		
+		
 		this.add(updateButton);
 		this.add(pokedexSelector);
 		this.add(healthField);
@@ -176,14 +183,17 @@ public class PokemonPanel extends JPanel
 			{
 			if(isValidName(nameField.getText()) && isValidInteger(combatField.getText()) && isValidInteger(healthField.getText()) && isValidDouble(speedField.getText()) && isValidInteger(speedField.getText()))
 					{
-						//what stuff in here
+						int selected = pokedexSelector.getSelectedIndex();
+						
+						baseController.updateSelected(selected,  nameField.getText(), Integer.parseInt(combatField.getText()), Integer.parseInt(healthField.getText()), Double.parseDouble(speedField.getText()));
+						
 					}
 			}
 		});
 	}
 	
 		
-		private void changeColorBaseOnData(String data)
+		private void changeColorBasedOnData(String data)
 		{
 		if(data.contains("Normal"))
 		{
@@ -193,6 +203,19 @@ public class PokemonPanel extends JPanel
 		{
 			this.setBackground(Color.PINK);
 		}
+		else if (data.contains("Bug"))
+		{
+			this.setBackground(Color.GREEN);
+		}
+		else if (data.contains("Water"))
+		{
+			this.setBackground(Color.BLUE);
+		}
+		else if (data.contains("Bug"));
+		{
+			this.setBackground(Color.YELLOW);
+		}
+		
 		repaint();
 		}
 		//do for ROCK WATER BUG
@@ -212,8 +235,9 @@ public class PokemonPanel extends JPanel
 			catch (NullPointerException missingFile)
 			{
 				pokemonIcon = new ImageIcon(getClass().getResource(path + defaultName + extension));
-				pokemonLabel.setIcon(pokemonIcon);
+				
 			}
+			pokemonLabel.setIcon(pokemonIcon);
 			repaint();
 		}
 		
@@ -227,6 +251,15 @@ public class PokemonPanel extends JPanel
 		}
 		private boolean isValidName(String name)
 		{
-			
+			boolean isValid = false;
+			if (name != null && name.length() > 2)
+			{
+				isValid = true;
+			}
+			else
+			{
+				JOptionPane.showMessageDialog(this,  "Pokemon need a name wit valid length");
+			}
+			return isValid;
 		}
 }

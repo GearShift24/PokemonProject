@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>8</zoom_level>
+  <zoom_level>6</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>592</x>
-      <y>624</y>
-      <w>144</w>
-      <h>136</h>
+      <x>444</x>
+      <y>468</y>
+      <w>108</w>
+      <h>102</h>
     </coordinates>
     <panel_attributes>Pokemon
 --
@@ -26,10 +26,10 @@ bg=red
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>248</x>
-      <y>352</y>
-      <w>144</w>
-      <h>104</h>
+      <x>186</x>
+      <y>264</y>
+      <w>108</w>
+      <h>78</h>
     </coordinates>
     <panel_attributes>BeWear
 --
@@ -43,10 +43,10 @@ bg=pink</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>528</x>
-      <y>144</y>
-      <w>144</w>
-      <h>104</h>
+      <x>396</x>
+      <y>108</y>
+      <w>108</w>
+      <h>78</h>
     </coordinates>
     <panel_attributes>Water
 --
@@ -58,10 +58,10 @@ bg=cyan</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>200</x>
-      <y>240</y>
-      <w>112</w>
-      <h>128</h>
+      <x>150</x>
+      <y>180</y>
+      <w>84</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;120.0;140.0</additional_attributes>
@@ -70,9 +70,9 @@ bg=cyan</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>144</y>
-      <w>144</w>
-      <h>104</h>
+      <y>108</y>
+      <w>108</w>
+      <h>78</h>
     </coordinates>
     <panel_attributes>Normal
 --
@@ -86,10 +86,10 @@ bg=white</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>48</x>
-      <y>240</y>
-      <w>232</w>
-      <h>128</h>
+      <x>36</x>
+      <y>180</y>
+      <w>174</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;270.0;140.0</additional_attributes>
@@ -97,10 +97,10 @@ bg=white</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>912</x>
-      <y>352</y>
-      <w>144</w>
-      <h>104</h>
+      <x>684</x>
+      <y>264</y>
+      <w>108</w>
+      <h>78</h>
     </coordinates>
     <panel_attributes>Nosepass
 --
@@ -113,10 +113,10 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>424</x>
-      <y>352</y>
-      <w>144</w>
-      <h>104</h>
+      <x>318</x>
+      <y>264</y>
+      <w>108</w>
+      <h>78</h>
     </coordinates>
     <panel_attributes>Barbaracle
 --
@@ -130,10 +130,10 @@ bg=cyan</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>592</x>
-      <y>352</y>
-      <w>144</w>
-      <h>104</h>
+      <x>444</x>
+      <y>264</y>
+      <w>108</w>
+      <h>78</h>
     </coordinates>
     <panel_attributes>Taros
 --
@@ -146,10 +146,10 @@ bg=white</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>752</x>
-      <y>352</y>
-      <w>144</w>
-      <h>104</h>
+      <x>564</x>
+      <y>264</y>
+      <w>108</w>
+      <h>78</h>
     </coordinates>
     <panel_attributes>Golisopod
 --
@@ -163,10 +163,10 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>168</x>
-      <y>144</y>
-      <w>144</w>
-      <h>104</h>
+      <x>126</x>
+      <y>108</y>
+      <w>108</w>
+      <h>78</h>
     </coordinates>
     <panel_attributes>Fighting
 --
@@ -179,10 +179,10 @@ bg=pink</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>360</x>
-      <y>240</y>
-      <w>112</w>
-      <h>128</h>
+      <x>270</x>
+      <y>180</y>
+      <w>84</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;120.0;140.0</additional_attributes>
@@ -190,10 +190,10 @@ bg=pink</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>344</x>
-      <y>144</y>
-      <w>144</w>
-      <h>104</h>
+      <x>258</x>
+      <y>108</y>
+      <w>108</w>
+      <h>78</h>
     </coordinates>
     <panel_attributes>Rock
 --
@@ -206,10 +206,10 @@ bg=orange</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>488</x>
-      <y>240</y>
-      <w>112</w>
-      <h>128</h>
+      <x>366</x>
+      <y>180</y>
+      <w>84</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>120.0;10.0;10.0;140.0</additional_attributes>
@@ -217,10 +217,10 @@ bg=orange</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>96</x>
-      <y>240</y>
-      <w>592</w>
-      <h>128</h>
+      <x>72</x>
+      <y>180</y>
+      <w>444</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;720.0;140.0</additional_attributes>
@@ -228,10 +228,10 @@ bg=orange</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>632</x>
-      <y>240</y>
-      <w>200</w>
-      <h>128</h>
+      <x>474</x>
+      <y>180</y>
+      <w>150</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;230.0;140.0</additional_attributes>
@@ -239,10 +239,10 @@ bg=orange</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>448</x>
-      <y>240</y>
-      <w>552</w>
-      <h>128</h>
+      <x>336</x>
+      <y>180</y>
+      <w>414</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;670.0;140.0</additional_attributes>
@@ -250,10 +250,10 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>712</x>
-      <y>144</y>
-      <w>144</w>
-      <h>104</h>
+      <x>534</x>
+      <y>108</y>
+      <w>108</w>
+      <h>78</h>
     </coordinates>
     <panel_attributes>Bug
 --
@@ -266,10 +266,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>792</x>
-      <y>240</y>
-      <w>56</w>
-      <h>136</h>
+      <x>594</x>
+      <y>180</y>
+      <w>42</w>
+      <h>102</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;50.0;150.0</additional_attributes>
@@ -277,10 +277,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>728</x>
-      <y>448</y>
-      <w>272</w>
-      <h>192</h>
+      <x>546</x>
+      <y>336</y>
+      <w>204</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;220.0;320.0;10.0</additional_attributes>
@@ -288,10 +288,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>688</x>
-      <y>448</y>
-      <w>152</w>
-      <h>192</h>
+      <x>516</x>
+      <y>336</y>
+      <w>114</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;220.0;70.0;130.0;170.0;10.0</additional_attributes>
@@ -299,10 +299,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>656</x>
-      <y>448</y>
-      <w>24</w>
-      <h>192</h>
+      <x>492</x>
+      <y>336</y>
+      <w>18</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;220.0;10.0;10.0</additional_attributes>
@@ -310,10 +310,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>488</x>
-      <y>448</y>
-      <w>152</w>
-      <h>192</h>
+      <x>366</x>
+      <y>336</y>
+      <w>114</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>170.0;220.0;10.0;10.0</additional_attributes>
@@ -321,10 +321,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>328</x>
-      <y>448</y>
-      <w>280</w>
-      <h>216</h>
+      <x>246</x>
+      <y>336</y>
+      <w>210</w>
+      <h>162</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>330.0;250.0;10.0;10.0</additional_attributes>

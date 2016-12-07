@@ -7,6 +7,8 @@ public abstract class Pokemon
 	private double speed;
 	private int number;
 	private String name;
+	
+	
 
 
 public Pokemon(String name, int number)
@@ -14,6 +16,7 @@ public Pokemon(String name, int number)
 	this.name = name;
 	this.number = number;
 }
+
 
 public int getHealthPoints()
 {
@@ -66,7 +69,7 @@ public void setName(String name)
 }
 
 
-	public String getPokmeonTypes()
+	public String getPokemonTypes()
 	{
 		String pokemonTypes = "This pokemon has the following types:\n";
 		Class<?> [] types = getClass().getInterfaces();

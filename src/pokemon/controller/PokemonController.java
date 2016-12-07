@@ -49,6 +49,7 @@ public class PokemonController
 		}
 		return pokemonNames;
 	}
+
 	
 	public void updateSelected(int index, String name, int combat, int health, double speed)
 	{
