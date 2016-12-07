@@ -243,11 +243,27 @@ public class PokemonPanel extends JPanel
 		
 		private boolean isValidDouble(String input)
 		{
-			
+			boolean isValid = false;
+			if (input != null && Double.parseDouble(input) > -0.0000001) //found in monster project
+			{
+				isValid = true;
+			}
+			else
+			{
+				JOptionPane.showMessageDialog(this, "Pokemon needs a double with valid length");
+			}
 		}
 		private boolean isValidInteger(String input)
 		{
-			
+			boolean isValid = false;
+			if (input != null && Integer.parseInt(input) > -0.0000001)
+			{
+				isValid = true;
+			}
+			else
+			{
+				JOptionPane.showMessageDialog(this, "Pokemon needs an int with a valid length");
+			}
 		}
 		private boolean isValidName(String name)
 		{
