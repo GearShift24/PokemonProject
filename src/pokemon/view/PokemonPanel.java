@@ -1,7 +1,6 @@
 package pokemon.view;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.awt.Color;
 import java.awt.Dimension;
 
@@ -70,6 +69,8 @@ public class PokemonPanel extends JPanel
 	
 	private void setupPanel()
 	{
+		
+		
 		this.setLayout(baseLayout);
 		this.setPreferredSize(new Dimension(900, 600));
 		numberField.setEditable(false);
@@ -190,9 +191,62 @@ public class PokemonPanel extends JPanel
 					}
 			}
 		});
+	
+	
+	this.addMouseListener(new MouseListener()
+	{
+		public void mouseEntered(MouseEvent entered)
+		{
+//			JOptionPane.showMessageDialog(baseController.getPokemonFrame(), "The mouse is in!");
+		}
+		public void mouseExited(MouseEvent exited)
+		{
+//			JOptionPane.showMessageDialog(baseController.getPokemonFrame(), "The mouse is out!");
+		}
+		public void mousePressed(MouseEvent pressed)
+		{
+//			JOptionPane.showMessageDialog(baseController.getPokemonFrame(), "The mouse was pressed!");
+		}
+		public void mouseReleased(MouseEvent Released)
+		{
+//			JOptionPane.showMessageDialog(baseController.getPokemonFrame(), "The mouse is released");
+		}
+		public void mouseClicked(MouseEvent clicked)
+		{
+			JOptionPane.showMessageDialog(baseController.getPokemonFrame(), "The mouse was clicked");
+		}
+		
+		});
+	
+	
+	this.addMouseMotionListener(new MouseMotionListener()
+	{
+			public void mouseDragged(MouseEvent dragged)
+			{
+		setRandomColor();
+			}
+			public void mouseMoved(MouseEvent moved)
+			{
+				
+			}
+	});
+	
 	}
 	
+	
+	private void setRandomColor()
+	{
+		int red = (int) (Math.random() * 256);
+		int green = (int) (Math.random() * 256);
 		
+		int blue = (int) (Math.random() * 256);
+		
+		this.setBackground(new Color(red, green, blue));
+	}
+	
+	
+	
+	
 		private void changeColorBasedOnData(String data)
 		{
 		if(data.contains("Normal"))
@@ -203,7 +257,7 @@ public class PokemonPanel extends JPanel
 		{
 			this.setBackground(Color.PINK);
 		}
-		else if (data.contains("Bug"))
+		else if (data.contains("Rock"))
 		{
 			this.setBackground(Color.GREEN);
 		}
@@ -211,7 +265,7 @@ public class PokemonPanel extends JPanel
 		{
 			this.setBackground(Color.BLUE);
 		}
-		else if (data.contains("Bug"));
+		else if (data.contains("Bug"))
 		{
 			this.setBackground(Color.YELLOW);
 		}
@@ -252,18 +306,21 @@ public class PokemonPanel extends JPanel
 			{
 				JOptionPane.showMessageDialog(this, "Pokemon needs a double with valid length");
 			}
+			return isValid;
 		}
 		private boolean isValidInteger(String input)
 		{
 			boolean isValid = false;
-			if (input != null && Integer.parseInt(input) > -0.0000001)
+			try 
 			{
+				Integer.parseInt(input);
 				isValid = true;
 			}
-			else
+			catch(NumberFormatException error)
 			{
 				JOptionPane.showMessageDialog(this, "Pokemon needs an int with a valid length");
 			}
+			return isValid;
 		}
 		private boolean isValidName(String name)
 		{

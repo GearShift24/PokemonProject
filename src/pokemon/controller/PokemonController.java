@@ -31,11 +31,11 @@ public class PokemonController
 	
 	private void buildPokedex()
 	{
-		pokedex.add(new BeWear("Spookie Bear"));
-		pokedex.add(new Barbaracle("Ugly-mon"));
+		pokedex.add(new BeWear("Bear ( ͡° ͜ʖ ͡°)"));
+		pokedex.add(new Barbaracle("HandFace"));
 		pokedex.add(new Taros("The Bull"));
-		pokedex.add(new Golisopod("Buggie"));
-		pokedex.add(new Nosepass("Hawaii Thingry"));
+		pokedex.add(new Golisopod("Guzma"));
+		pokedex.add(new Nosepass("THE ROCK"));
 		
 	}
 	
