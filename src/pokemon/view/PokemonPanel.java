@@ -43,7 +43,6 @@ public class PokemonPanel extends JPanel {
 		this.speedField = new JTextField(5);
 		this.numberField = new JTextField(5);
 		this.advancedArea = new JTextArea(10, 25);
-		baseLayout.putConstraint(SpringLayout.NORTH, advancedArea, 10, SpringLayout.SOUTH, speedField);
 		this.pokedexSelector = new JComboBox(baseController.buildPokedexText());
 		this.combatLabel = new JLabel("Attack Points:");
 		this.speedLabel = new JLabel("Speed Rate:");
@@ -53,8 +52,6 @@ public class PokemonPanel extends JPanel {
 		this.nameLabel = new JLabel("Pokemon Name Is:");
 		this.pokemonLabel = new JLabel("The Current Pokemon", pokemonIcon, SwingConstants.CENTER);
 		this.advancedLabel = new JLabel("Advanced Poke-info");
-		baseLayout.putConstraint(SpringLayout.SOUTH, advancedLabel, -128, SpringLayout.SOUTH, this);
-		baseLayout.putConstraint(SpringLayout.EAST, advancedLabel, -6, SpringLayout.WEST, advancedArea);
 		this.titleImage = new JLabel(pokemonBigTitleImage);
 
 		setupPanel();
@@ -99,8 +96,9 @@ public class PokemonPanel extends JPanel {
 		baseLayout.putConstraint(SpringLayout.WEST, advancedArea, 0, SpringLayout.WEST, healthLabel);
 		baseLayout.putConstraint(SpringLayout.WEST, pokemonLabel, 30, SpringLayout.WEST, this);
 		baseLayout.putConstraint(SpringLayout.EAST, pokemonLabel, -162, SpringLayout.WEST, healthLabel);
-	
-		
+		baseLayout.putConstraint(SpringLayout.NORTH, advancedArea, 10, SpringLayout.SOUTH, speedField);
+		baseLayout.putConstraint(SpringLayout.SOUTH, advancedLabel, -154, SpringLayout.SOUTH, this);
+		baseLayout.putConstraint(SpringLayout.EAST, advancedLabel, -6, SpringLayout.WEST, advancedArea);
 		baseLayout.putConstraint(SpringLayout.NORTH, updateButton, 20, SpringLayout.SOUTH, advancedArea);
 		baseLayout.putConstraint(SpringLayout.SOUTH, updateButton, 0, SpringLayout.SOUTH, this);
 		baseLayout.putConstraint(SpringLayout.WEST, updateButton, 0, SpringLayout.WEST, advancedArea);
