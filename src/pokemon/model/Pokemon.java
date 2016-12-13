@@ -71,7 +71,7 @@ public void setName(String name)
 
 	public String getPokemonTypes()
 	{
-		String pokemonTypes = "This pokemon has the following types:\n";
+		String pokemonTypes = "\nThis pokemon has the following types:\n";
 		Class<?> [] types = getClass().getInterfaces();
 		String [] pokeTypes = new String[types.length];
 		for(int index =0; index <types.length; index++)
