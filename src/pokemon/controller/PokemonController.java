@@ -33,6 +33,7 @@ public class PokemonController
 	{
 		pokedex.add(new BeWear("Bear ( ͡° ͜ʖ ͡°)"));
 		pokedex.add(new Barbaracle("HandFace"));
+		pokedex.add(new Golisopod("TEAM SKULLS BOI"));
 		pokedex.add(new Taros("The Bull"));
 		pokedex.add(new Golisopod("Guzma"));
 		pokedex.add(new Nosepass("THE ROCK"));
