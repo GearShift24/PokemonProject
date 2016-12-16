@@ -26,6 +26,8 @@ public class PokemonController
 	public void start()
 	{
 		JOptionPane.showMessageDialog(pokemonFrame,  "Welcome to Pokemon Stats Stuff!");
+		
+		
 	}
 
 	
